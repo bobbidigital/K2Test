@@ -1,0 +1,5 @@
+The K2Test is a series of classes written to create a low grade test harness 
+for the K2Verity Platform. The system allows for multithreaded test execution
+with source queries and search queries. The search and source queries are also
+randomized to provide variablity in execution as well as to minimize caching
+on the Verity back end servers.

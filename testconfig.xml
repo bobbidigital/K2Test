@@ -1,0 +1,73 @@
+<testplan>
+	<command command="rckvdk" locale="english" />
+	<source_queries>	
+		<source_query>'bpvolume' in &lt;DBALIAS&gt;</source_query>
+	</source_queries>
+	<collections>
+		<collection>d:\colls\ac</collection>
+	    <!--	
+		<collection>e:\ver\COLL11\coll_search</collection>
+		<collection>d:\colls\aa</collection>
+		<collection>d:\colls\ab</collection>
+	     -->
+	</collections>
+
+	<test threads="5" executions="500">
+		<source_queries>
+			<source_query>'test' in &lt;DBALIAS&gt;</source_query>
+		</source_queries>
+		<queries>
+			<query>at will  </query>
+			<query>at will &lt;near&gt; terminate    </query>
+			<query>at will &lt;near&gt; terminate and public policy      </query>
+			<query>at will &lt;near&gt; terminate &lt;near&gt; public policy     </query>
+			<query>at will &lt;near/5&gt; terminate &lt;near/5&gt; public policy        </query>
+			<query>hearsay &lt;near&gt; exception and excited utterance</query>
+			<query>evidence and inadmissible </query>
+			<query>evidence and spousal privilege and inadmissible </query>
+			<query>hearsay near exception and excited utterance </query>
+			<query>search</query>
+			<query>warrantless search </query>
+			<query>warrantless search &lt;near&gt; (residence or home) and consent </query>
+			<query>warrantless search &lt;near&gt; residence and consent </query>
+			<query>warrantless search &lt;near/5&gt; residence &lt;near&gt; consent </query>
+			<query>court</query>
+			<query>Page numbers and West </query>
+			<query>Page numbers and copyright</query>
+			<query>Page numbers &lt;near&gt; West and copyright </query>
+			<query>equal pay</query>
+			<query>equal pay and harassment</query>
+			<query>equal pay and cubicle</query>
+			<query>Hedonic damages </query>
+			<query>Psychological damages </query>
+			<query>Contractual damages </query>
+			<query>Daubert &lt;near&gt; warnings</query>
+			<query>Daubert &lt;near&gt; defect</query>
+			<query>Daubert &lt;near&gt; expert </query>
+			<query>Contract &lt;near&gt; breach</query>
+			<query>Household goods movers</query>
+			<query>Household goods carriers</query>
+			<query>Carrier Liability</query>
+			<query>Carmack Amendment &lt;near&gt; attorneys fees</query>
+			<query>Breach of contract and Performance</query>
+			<query>Federal Labor Standards Act and motor carrier exemption</query>
+			<query>Federal Rail Safety Act</query>
+			<query>Federal Employee Liability Act</query>
+			<query>Federal Aviation Administration Authorization Act &lt;near&gt; motor carrier</query>
+			
+		</queries>
+		<!--
+		   <collections>
+			<collection>E:\ver\coll12\coll_search</collection>
+				<collection>COLL16</collection>
+			<collection>COLL12</collection>
+		   </collections>	
+		-->
+	</test>
+
+	<test threads="2" executions="2">
+		<queries>
+			<query>Just a simple test query</query>
+		</queries>
+	</test>
+</testplan>
